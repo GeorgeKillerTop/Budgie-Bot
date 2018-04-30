@@ -4,7 +4,7 @@ const ms = require("ms");
 const YouTube = require('simple-youtube-api');
 
 const GOOGLE_API_KEY = "AIzaSyDUmo-BtB5oQr5Y3RSgYYBMj9rFKMr-W2s";
-const prefix = "%";
+const prefix = ">";
 
 const youtube = new YouTube(GOOGLE_API_KEY);
 const queue = new Map();
@@ -38,14 +38,21 @@ if (message.author.bot) return undefined;
         .addField("Informatii: ", message.author.username + " este papagal in proportie de " + r1[Math.floor(Math.random() * r1.length)])
         .setTimestamp();
         message.channel.sendMessage(E1); 
-            break;     
+            break;   
+        case "answer": 
+        var E2 = new Discord.RichEmbed()
+        .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')
+        .setDescription(r4[Math.floor(Math.random() * r4.length)])
+        .setColor("#15f153")
+        .setTimestamp();
+        return message.channel.sendMessage(r4[Math.floor(Math.random() * r4.length)]);
+           break;    
           case "info":
             var E2 = new Discord.RichEmbed()
             .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')
             .setColor("#15f153")
             .addField("Youtube", '>https://www.youtube.com/channel/UC39X8q_x_Km537VXZjsRqQw')
             .addField("Ce PC am?", '> Lenovo G50')
-            .addField("Pagina de Facebook", '>https://www.facebook.com/CristalVic/')
             .addField("Unde stau?", '>Stau in Tg-Jiu')
             .addField("Cu cine colaborez?", "%colaborari")
             .setTimestamp();
@@ -158,7 +165,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
             var E40 = new Discord.RichEmbed()
             .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')
             .setColor("#15f153")
-            .addField("Eroare", "CristalVic nu este pe un Voice Channel")
+            .addField("Eroare", "Budgie nu este pe un Voice Channel")
             .setTimestamp();
             return message.channel.send(E40);
         }
@@ -168,7 +175,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
                 var E39 = new Discord.RichEmbed()
                 .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')
             .setColor("#15f153")
-            .addField("CristalVic s-a deconectat",":x:")
+            .addField("Budgie s-a deconectat",":x:")
             .setTimestamp();
             message.channel.sendMessage(E39);       
             break;
@@ -281,11 +288,11 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
              var E8 = new Discord.RichEmbed()
              .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')
             .setColor("#15f153")
-            .addField("%help-music", '> detalii despre partea legata de muzica')
-            .addField("%help-divertisment", '> detalii despre partea legata de divertisment')
-            .addField("%help-admin", '> detalii despre partea legata de administatia serverului')
-            .addField("%info", '> Informatii despre Budgie')
-            .addField("Add Budgie on your server", '> https://discordapp.com/api/oauth2/authorize?client_id=438371377418862602&permissions=8&scope=bot')
+            .addField(">help-music", '> detalii despre partea legata de muzica')
+            .addField(">help-divertisment", '> detalii despre partea legata de divertisment')
+            .addField(">help-admin", '> detalii despre partea legata de administatia serverului')
+            .addField(">info", '> Informatii despre Budgie')
+            .addField(">Add Budgie on your server", '> https://discordapp.com/api/oauth2/authorize?client_id=438371377418862602&permissions=8&scope=bot')
             .setTimestamp();
             message.channel.sendMessage(E8);
             break;
@@ -293,13 +300,13 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
              var E9 = new Discord.RichEmbed()
              .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')
             .setColor("#15f153")
-            .addField("%play ", '> Comanda pentru a asculta muzica')
-            .addField("%skip", '> Comanda pentru a da skip la urmatoarea pesa din playlist')
-            .addField("%stop", '> Comanda pentru a opri Muzica')
-            .addField("%volume", '> Comanda pentru ajusta volumul botului muzica')
-            .addField("%now-playing", '> Comanda pentru a vedea ce melodie se reda')
-            .addField("%pause", '> Comanda pentru a pune pe pauza muzica')
-            .addField("%resume", '> Comanda pentru a relua muzica')
+            .addField(">play ", '> Comanda pentru a asculta muzica')
+            .addField(">skip", '> Comanda pentru a da skip la urmatoarea pesa din playlist')
+            .addField(">stop", '> Comanda pentru a opri Muzica')
+            .addField(">volume", '> Comanda pentru ajusta volumul botului muzica')
+            .addField(">now-playing", '> Comanda pentru a vedea ce melodie se reda')
+            .addField(">pause", '> Comanda pentru a pune pe pauza muzica')
+            .addField(">resume", '> Comanda pentru a relua muzica')
             .setTimestamp();
             message.channel.sendMessage(E9);
             break;
@@ -307,8 +314,8 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
              var E10 = new Discord.RichEmbed()
              .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')
             .setColor("#15f153")
-            .addField("%papagal", '> Iti arata cat de gay esti')
-            .addField("%Budgie", '> INtraba-l pe Budgie ceva') 
+            .addField(">papagal", '> Iti arata cat de gay esti')
+            .addField(">answer", '> INtraba-l pe Budgie ceva') 
             .setTimestamp();
             message.channel.sendMessage(E10);
             break;
@@ -426,20 +433,11 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
         message.channel.send(E29);
         }, ms(mutetime)); 
             break;      
-            case "Budgie" :
-            let reason3 = args2.slice(1).join(" ");
-    var E1 = new Discord.RichEmbed()
-    .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')
-    .setColor("#15f153")
-    .addField("Intrebarea lui " + message.author.username, `${reason3}`)
-    .addField('Raspunsul lui Budgie:', r4[Math.floor(Math.random() * r4.length)])
-    .setTimestamp()
-    message.channel.sendMessage(E1); 
-            break;
         default:
         var T = new Discord.RichEmbed()
+        .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')    
         .setColor("#15f153")
-        .addField("Comanda invalida",'Incearca %help')
+        .addField("Comanda invalida",'Incearca >help')
         .setTimestamp();
         message.channel.sendMessage(T); 
     }
@@ -658,5 +656,5 @@ function play(guild, song , message , channel) {
             .setTimestamp()
       
             channel.sendEmbed(embed);
-      });   
+      });
 bot.login(process.env.BOT_TOKEN);
