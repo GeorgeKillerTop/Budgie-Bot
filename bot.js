@@ -661,10 +661,7 @@ var  r1 = [
   ]
 
 var  r4 = [
-    "Da",
-    "Nu",
-    "Nu stiu",
-    "Idk"
+    "Nu mai raspund la intrebari pana Gigela nu recunoaste ca e curva"
   ]
   
 async function handleVideo(video, msg, voiceChannel, playlist = false) {
