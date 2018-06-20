@@ -661,7 +661,11 @@ var  r1 = [
   ]
 
 var  r4 = [
-    "Nu mai raspund la intrebari pana Gigela nu recunoaste ca e curva"
+    "Da",
+    "Nu",
+    "Poate",
+    "Nu stiu",
+    "Ce papagalu meu ii cu intrebarea asta cretina?"
   ]
   
 async function handleVideo(video, msg, voiceChannel, playlist = false) {
