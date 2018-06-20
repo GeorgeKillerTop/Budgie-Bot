@@ -64,7 +64,6 @@ bot.on("message", async message => {
   });
 });
 bot.on("message", async message => {
-if (message.author.bot) return undefined;
 	if (!message.content.startsWith(prefix)) return undefined;
 
     const args = message.content.split(' ');
