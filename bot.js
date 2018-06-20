@@ -570,6 +570,35 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
                .setFooter(`Mai ai nevoie de ${difference} XP pentru level UP`);   
                message.channel.send(lvlEmbed);
             break;
+        case "repeta" :
+ let reason2 = args2.slice(2).join(" ");
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+message.channel.sendMessage(reason2);
+            break;
         default:
         var T = new Discord.RichEmbed()
         .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')    
