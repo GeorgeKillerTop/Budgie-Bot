@@ -76,6 +76,30 @@ if (message.author.bot) return undefined;
     var args3 = message.content.substring(prefix.length).split(" ");
 
     switch (args3[0].toLowerCase()) {
+        case "curva":  
+        var E1 = new Discord.RichEmbed()
+        .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')
+        .setColor("#15f153")
+        .addField("Informatii: ", message.author.username + " este curva in proportie de " + r1[Math.floor(Math.random() * r1.length)])
+        .setTimestamp();
+        message.channel.sendMessage(E1); 
+            break;  
+        case "pedofil":  
+        var E1 = new Discord.RichEmbed()
+        .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')
+        .setColor("#15f153")
+        .addField("Informatii: ", message.author.username + " este pedofil in proportie de " + r1[Math.floor(Math.random() * r1.length)])
+        .setTimestamp();
+        message.channel.sendMessage(E1); 
+            break;  
+        case "gay":  
+        var E1 = new Discord.RichEmbed()
+        .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')
+        .setColor("#15f153")
+        .addField("Informatii: ", message.author.username + " este gay in proportie de " + r1[Math.floor(Math.random() * r1.length)])
+        .setTimestamp();
+        message.channel.sendMessage(E1); 
+            break;   
         case "papagal":  
         var E1 = new Discord.RichEmbed()
         .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')
