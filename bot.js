@@ -571,7 +571,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
                message.channel.send(lvlEmbed);
             break;
         case "repeta" :
- let reason5 = args.slice(2).join(" ");
+ let reason5 = args.slice(1).join(" ");
 message.channel.sendMessage(reason5)
 message.channel.sendMessage(reason5)
 message.channel.sendMessage(reason5)
