@@ -569,6 +569,9 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
                .setFooter(`Mai ai nevoie de ${difference} XP pentru level UP`);   
                message.channel.send(lvlEmbed);
             break;
+            case "alerta" :
+               message.channel.send("@here Atenție! Alertă!Vă rugăm să fiți pe fază deoarece suntem atacați de un alt server!:no_entry:");
+            break;
         default:
         var T = new Discord.RichEmbed()
         .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')    
