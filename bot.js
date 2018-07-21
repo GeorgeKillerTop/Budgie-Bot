@@ -570,6 +570,7 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
                message.channel.send(lvlEmbed);
             break;
             case "alerta" :
+               message.delete();
                message.channel.send("@here Atenție! Alertă!Vă rugăm să fiți pe fază deoarece suntem atacați de un alt server!:no_entry:");
             break;
         default:
