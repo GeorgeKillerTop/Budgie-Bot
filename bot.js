@@ -573,6 +573,34 @@ Scire pe chat numarul corespunzator videoclipului pe care vrei sa il asculti `)
                message.delete();
                message.channel.send("@here Atenție! Alertă!Vă rugăm să fiți pe fază deoarece suntem atacați de un alt server!:no_entry:");
             break;
+            case "repeta" :
+let reason5 = args.slice(1).join(" ");
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5)
+message.channel.sendMessage(reason5);
+            break;
         default:
         var T = new Discord.RichEmbed()
         .setAuthor("Budgie",bot.user.avatarURL,'https://www.youtube.com/channel/UCqwcVEXB0do_FegEv2KGyQQ?view_as=subscriber')    
