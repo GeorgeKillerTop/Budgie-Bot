@@ -769,7 +769,7 @@ function play(guild, song , message , channel) {
         serverQueue.textChannel.send(E50)
     }
     bot.on('guildMemberAdd', member => {
-        let channel = member.guild.channels.find('name', 'welcome-leave');
+        let channel = member.guild.channels.find('name', '🤗welcome-leave👋');
         let memberavatar = member.user.avatarURL
             if (!channel) return;
             let embed = new Discord.RichEmbed()
@@ -784,7 +784,7 @@ function play(guild, song , message , channel) {
       
       
       bot.on('guildMemberRemove', member => {
-        let channel = member.guild.channels.find('name', 'welcome-leave');
+        let channel = member.guild.channels.find('name', '🤗welcome-leave👋');
         let memberavatar = member.user.avatarURL
             if (!channel) return;
             let embed = new Discord.RichEmbed()
